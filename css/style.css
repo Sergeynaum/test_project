@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Champagne & Limousines";
+  src: url("../fonts/ChampagneLimousines-Bold.eot");
+  src: url("../fonts/ChampagneLimousines-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ChampagneLimousines-Bold.woff2") format("woff2"), url("../fonts/ChampagneLimousines-Bold.woff") format("woff"), url("../fonts/ChampagneLimousines-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Semibold.eot");
+  src: url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Italic.eot");
+  src: url("../fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: "Freestyle Script";
+  src: url("../fonts/FreestyleScript-Regular.eot");
+  src: url("../fonts/FreestyleScript-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FreestyleScript-Regular.woff2") format("woff2"), url("../fonts/FreestyleScript-Regular.woff") format("woff"), url("../fonts/FreestyleScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px;
+  font-family: "Open Sans"; }
+
+.container {
+  margin: 125px auto;
+  max-width: 1170px;
+  width: 100%; }
+
+header nav {
+  position: fixed;
+  background-color: #FFFFFF;
+  max-height: 100px;
+  width: 100%; }
+  header nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center; }
+    header nav ul li {
+      display: inline-block;
+      margin: 30px 35px; }
+    header nav ul a {
+      color: #555555;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-family: "Open Sans";
+      font-weight: 600;
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      transition: all 0.5s; }
+    header nav ul a:hover {
+      color: #5363db; }
+    header nav ul a:before {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 0;
+      background: #5363db;
+      transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+      left: 50%;
+      bottom: 0; }
+    header nav ul a:after {
+      display: block;
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 0;
+      background-color: #5363db;
+      transition: width 0.5s ease-in-out;
+      left: 50%;
+      bottom: 0; }
+    header nav ul a:hover:before {
+      width: 50%;
+      left: 20%; }
+    header nav ul a:hover:after {
+      width: 30%; }
+    header nav ul .logo {
+      margin: 0; }
+      header nav ul .logo img {
+        max-height: 45px; }
+      header nav ul .logo figcaption {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Champagne & Limousines";
+        font-size: 2.4rem;
+        color: #5363db; }
+
+.slider {
+  background-color: #5363db;
+  background: url(../imgs/slider.png) 80% 100%;
+  background-size: cover; }
+  .slider .clarity {
+    background: rgba(83, 99, 219, 0.8); }
+    .slider .clarity .slider-content {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+      padding: 200px 0 110px 0; }
+      .slider .clarity .slider-content .slider-form {
+        box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.3);
+        margin: 0 40px 0 200px;
+        max-width: 300px;
+        height: 100%;
+        background: #FFFFFF;
+        border-radius: 20px; }
+        .slider .clarity .slider-content .slider-form h2 {
+          text-transform: capitalize;
+          color: #5363db;
+          font-size: 2.5rem;
+          font-weight: 600;
+          padding: 40px 35px 25px 35px; }
+        .slider .clarity .slider-content .slider-form [type="text"] {
+          display: block;
+          background: #f2f2f2;
+          border: 0;
+          min-height: 60px;
+          min-width: 230px;
+          border-radius: 10px;
+          margin: 15px 40px 15px 30px;
+          font-size: 1.4rem;
+          font-weight: 400;
+          font-family: "Open Sans";
+          outline: none;
+          padding: 0 10px;
+          color: #888888; }
+        .slider .clarity .slider-content .slider-form select {
+          display: block;
+          background: #f2f2f2;
+          border: 0;
+          min-height: 60px;
+          min-width: 250px;
+          border-radius: 10px;
+          margin: 15px 40px 15px 30px;
+          font-size: 1.4rem;
+          font-weight: 400;
+          font-family: "Open Sans";
+          outline: none;
+          padding: 0 10px;
+          color: #888888; }
+        .slider .clarity .slider-content .slider-form button {
+          min-width: 170px;
+          min-height: 50px;
+          border: 0;
+          background: #5b6ceb;
+          color: #FFFFFF;
+          font-size: 1.6rem;
+          font-weight: bold;
+          outline: none;
+          border-radius: 10px;
+          cursor: pointer;
+          margin: 15px 30px 40px 95px;
+          transition: all 0.3s; }
+        .slider .clarity .slider-content .slider-form button:hover {
+          background-color: #475bf1; }
+    .slider .clarity .slider-text {
+      max-width: 485px;
+      margin-right: 200px; }
+      .slider .clarity .slider-text h2 {
+        font-weight: bold;
+        font-size: 4.8rem;
+        color: #FFFFFF;
+        text-transform: uppercase; }
+      .slider .clarity .slider-text h3 {
+        font-family: "Freestyle Script";
+        font-size: 4rem;
+        color: #FFFFFF;
+        font-weight: 400;
+        max-width: 60%; }
+
+.why-yoga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .why-yoga .caption h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5b6ceb; }
+  .why-yoga .caption h3 {
+    font-family: "Freestyle Script";
+    margin: 20px;
+    text-align: center;
+    font-size: 4rem;
+    color: #777777; }
+  .why-yoga .yoga-item {
+    display: flex;
+    width: 570px;
+    height: 300px;
+    box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden; }
+    .why-yoga .yoga-item .item-img {
+      min-width: 270px;
+      min-height: 300px; }
+    .why-yoga .yoga-item h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #777777;
+      text-transform: uppercase;
+      margin: 50px 0 35px 30px; }
+    .why-yoga .yoga-item p {
+      max-width: 220px;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #555555;
+      margin: 0 30px;
+      line-height: 25px; }
+    .why-yoga .yoga-item h4 {
+      margin: 20px 30px;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      color: #999999; }
+  .why-yoga .top-goals {
+    display: flex;
+    justify-content: space-between; }
+    .why-yoga .top-goals .yoga-item:nth-child(1) .item-img {
+      background: url(../imgs/yoga-imgs/item1.jpg) 85% 100%; }
+    .why-yoga .top-goals .yoga-item:nth-child(2) .item-img {
+      background: url(../imgs/yoga-imgs/item2.jpg) 50% 100%; }
+  .why-yoga .bottom-goals {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px; }
+    .why-yoga .bottom-goals .yoga-item:nth-child(1) .item-img {
+      background: url(../imgs/yoga-imgs/item3.jpg) 50% 100%; }
+    .why-yoga .bottom-goals .yoga-item:nth-child(2) .item-img {
+      background: url(../imgs/yoga-imgs/item4.jpg) 15% 100%; }
+
+/*# sourceMappingURL=style.css.map */
